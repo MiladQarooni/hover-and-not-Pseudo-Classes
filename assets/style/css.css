@@ -1,0 +1,52 @@
+
+.flex-container:hover > :not(:hover){
+  opacity: 0.5;
+}
+.flex-container {
+  display: flex;
+  width: 50%;
+  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  flex-wrap: wrap;
+  
+  
+}
+
+.flex-container > div {
+  background-color:darksalmon;
+  flex: 20%;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+} 
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .flex-container > div {
+
+    flex-basis: 48%;
+  }
+ 
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  
+}
+
+@media only screen and (max-width: 576px) {
+
+
+
+ 
+}
